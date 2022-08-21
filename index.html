@@ -18,6 +18,20 @@
     </head>
 
     <body>
-        <div class="loader center"></div>
+        <div class="loader center hideable-loader" id="loader" style="display: block;"></div>
+        <h1 class="page-header" style="display:none; text-align: center;" id="2ndText">⚠︎ Failed to load. Please try again later.</h1>
+        <script>
+            var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 6000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("2ndText").style.display = "block";
+}
+myFunction();
+        </script>
     </body>
 </html>
