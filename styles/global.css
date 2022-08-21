@@ -1,0 +1,35 @@
+/* body {
+    background: rgb(0,0,7) url("https://user-images.githubusercontent.com/100052562/185770969-2d5dc65d-63ba-4bcc-8273-30c206c372b0.png") no-repeat fixed center;
+  } */
+
+
+
+  /* Loader */
+  .loader {
+    border: 16px solid #00000031; /* Light grey */
+    border-top: 16px solid #04ff00d4; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.48s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Other */
+  .center {
+    margin: 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .page-header {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
