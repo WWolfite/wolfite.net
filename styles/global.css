@@ -8,6 +8,8 @@
   .loader {
     border: 16px solid #00000031; /* Light grey */
     border-top: 16px solid #04ff00d4; /* Blue */
+    border-left: 16px solid #04ff00d4; /* Blue */
+    border-right: 16px solid #04ff00d4; /* Blue */
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -21,7 +23,7 @@
 
   /* Other */
   .center {
-    margin:-3%;
+    margin:-3.8%;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -32,4 +34,13 @@
   .page-header {
     color: white;
     font-family: 'Roboto', sans-serif;
+  }
+
+
+  .animate-top {
+    position: relative;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 1s;
+    animation-name: animatetop;
+    animation-duration: 1s
   }
