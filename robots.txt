@@ -1,2 +1,5 @@
 User-agent: *
 Disallow: /api/*/hidden
+
+# Details...
+Disallow: /api/fe2/map
