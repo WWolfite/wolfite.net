@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Monetization | Wolfite's Obby System</title>
+        <link rel="stylesheet" href="https://wolfite.net/styles/global.css"> 
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src=""></script>
+        <style>
+            body {
+              background-image: url('https://cdn.wolfite.net/backgrounds/main-background.jpg');
+              background-color: #000;
+            }
+
+            .button {
+              background-color: #000;
+              border-radius: 40%;
+              color: #FFF;
+              /* opacity: 0; */
+            }
+
+            .hl {
+                color: rgb(0, 128, 255);
+                text-decoration: none;
+            }
+            
+            h1 {
+                color: #FFF;
+            }
+
+            h2 {
+                color: #FFF;
+            }
+
+            h3 {
+                color: #FFF;
+            }
+            p {
+                color: rgb(222, 222, 222);
+            }
+
+            il {
+                text-decoration: none;
+            }
+
+            sub {
+                color: rgb(100, 100, 100);
+            }
+
+            </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!-- N -->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    </head>
+
+    <body>
+        
+      <div style="text-align: center; width: 100%; height: 20%;">
+            <h1><b>Wolfite's Obby System</b></h1>
+            <br>
+      </div>
+
+      <div style="text-align: center; width: 60%; background-color: rgba(0, 0, 0, 0.5); height: 80%; margin: auto; border-radius: 10px;" id="about">
+        <h1>
+            <b>
+            Monetization
+            </b>
+        </h1>
+        <p>
+            Monetization in WOS contains of the classic monetization features found in most obbies. All monetization features are optional. If you wish to disable one, leave the ProductId/GamepassId at 0. Keep in mind WOS does not have a built-in store in 0.8.
+        </p>
+        <br>
+
+        <h3>
+            <b>Skip Stage</b>
+        </h3>
+
+        <p>
+            A skip stage product allows player to spend robux to skip a stage. This is a one time purchase and can be made multiple times. Keep in mind, every 40 minutes a user is<br> given a <a href="/features/free-skips" class="hl">free skip</a>, a free alternative to paying for a skip.
+            <br>
+            <br>
+            <br>
+            Type: Product
+        </p>
+        <br>
+
+        <h3>
+            <b>Easy Mode</b>
+        </h3>
+
+        <p>
+            Easy Mode allows a player to touch damage bricks and kill bricks without being affected.
+            <br>
+            <br>
+            <br>
+            Type: Gamepass
+        </p>
+        <br>
+
+        <h3>
+            <b>Coils</b>
+        </h3>
+
+        <p>
+            Coils are tools that give players special abilities. For example, a gravity coil will allow a player to jump higher while they equip it. There are 4 types of coils that are currently available in WOS: Gravity Coil, Speed Coil, Fusion Coil (bot gravity and speed), and the Heal Coil.
+            <br>
+            <br>
+            <br>
+            Type: Gamepass
+        </p>
+        <br>
+
+        <hr>
+
+        <h1 id="setup">
+            <b>Setup</b>
+        </h1>
+
+        <p>
+            This section will cover how to setup monetization features. This section will assume you know how to make a <a href="https://create.roblox.com/docs/production/monetization/game-passes" class="hl" target="_blank">gamepass</a> and a <a href="https://create.roblox.com/docs/production/monetization/developer-products" class="hl" target="_blank">developer product</a>.
+        </p>
+        <br>
+
+        <h3>
+            <b>Skip Stage</b>
+        </h3>
+
+        <p>
+            First of all, to make setup the skip stage product, you must have the <a href="https://create.roblox.com/docs/production/monetization/developer-products" class="hl" target="_blank">developer product</a> you want to use ready.<br> Next, go to the Configurations module and scroll down until you see the SkipStageID value. Then copy the ID of your <a href="https://create.roblox.com/docs/production/monetization/developer-products" class="hl" target="_blank">developer product</a> and paste it as the <br>SkipStageID value.
+        </p>
+        <br>
+
+        <h3>
+            <b>Gamepasses</b>
+        </h3>
+
+        <p>
+            Every other monetization feature is a <a href="https://create.roblox.com/docs/production/monetization/game-passes" class="hl" target="_blank">gamepass</a>. Under the SkipStageID value in the Configurations module are all the Gamepass values. You can match them with their respective <a href="https://create.roblox.com/docs/production/monetization/game-passes" class="hl" target="_blank">gamepass</a> IDs.
+        </p>
+
+        
+        <p class="sub" style="color: rgb(187, 187, 187);">Included in version 0.8.</p>
+        &nbsp;
+  </div>
+
+
+<div style="text-align: center; width: 100%; height: 20%;">
+    <p>Need to remove the watermarks? View premium <a class="hl" href="/premium">here</a>.</p>
+    <br>
+</div>
+    </body>
+</html>
