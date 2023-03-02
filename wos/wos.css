@@ -1,0 +1,126 @@
+body {
+    background-image: url('https://cdn.wolfite.net/backgrounds/main-background.jpg');
+    background-color: #000;
+  }
+
+  .button {
+    background-color: #000;
+    border-radius: 40%;
+    color: #FFF;
+    /* opacity: 0; */
+  }
+
+  .hl {
+      color: rgb(0, 128, 255);
+      text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+      color: #FFF;
+  }
+  p {
+      color: rgb(222, 222, 222);
+  }
+
+  il {
+      text-decoration: none;
+  }
+
+  sub {
+      color: rgb(100, 100, 100);
+  }
+
+  .logo {
+      width: 90%;
+  }
+
+  .frame {
+      border-radius: 1em;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .feature-header {
+      font-size: 180%;
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  .feature-desc {
+      font-size: small;
+      text-align: left;
+      padding-left: 10px;
+      padding-top: 1px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+  }
+
+  .desktop-desc {
+      display: block;
+  }
+
+  .mobile-desc {
+      display: none;
+  }
+
+
+
+  @media only screen and (max-width: 1200px) {
+      .frame {
+          width: 90% !important;
+          font-size: small;
+      }
+
+      .logo {
+          width: 98%;
+      }
+
+      .feature-contain {
+          width: 100%;
+      }
+
+      .desktop-desc {
+          display: none !important;
+      }
+
+      .mobile-desc {
+          display: block !important;
+      }
+  }
+
+  @media only screen and (min-width: 3600px) {
+      .frame {
+          width: 99% !important;
+          border-radius: 2em !important;
+          margin-top: 2% !important;
+      }
+
+      .frame #frame-header {
+          font-size: 600% !important;
+      }
+
+      .frame #frame-desc {
+          font-size: 300% !important;
+      }
+
+      .feature-contain {
+          height: 180px !important;
+          border-radius: 2em !important;
+      }
+
+      .feature-header {
+          font-size: 300%;
+      }
+
+      .feature-desc {
+          font-size: 200%;
+      }
+
+      .logo {
+          width: 99.5%;
+      }
+
+      .feature-contain {
+          width: 100%;
+      }
+  }
