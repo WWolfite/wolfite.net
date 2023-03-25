@@ -1,90 +1,15 @@
+<!-- WOLFITE INDEX V3 -->
 <!DOCTYPE html>
 
 <html>
     <head>
         <title>Wolfite</title>
+
+        <script src="/s/backgrounds.js"></script>
+        <link rel="stylesheet" href="/css/background.css">
+        <script type="application/ld+json" src="/s/website.json"></script>
         <link rel="stylesheet" href="styles/global.css"> 
-        <link rel="icon" type="image/x-icon" href="favicon.ico?">
-        <script src=""></script>
 
-
-        <style>
-            /* a {font-family: 'Source Code Pro', monospace; color: #FFF;} */
-            body {
-              background-image: url('/assets/index-background.jpg');
-              background-color: #000;
-            }
-
-            .button {
-              background-color: #000;
-              border-radius: 40%;
-              color: #FFF;
-              /* opacity: 0; */
-            }
-
-            .hl {
-                color: rgb(0, 128, 255);
-                text-decoration: none;
-            }
-
-            hr {
-              border-radius: 1em;
-            }
-
-            a {
-              text-decoration: none;
-            }
-
-            .grid-container {
-               display: grid;
-               row-gap: 4px;
-               column-gap: 0px;
-               grid-template-columns: 180px 180px auto;
-              
-              
-            }
-
-
-            .grid-item {
-              padding: 2px;
-              display: inline-block;
-              width: 140px;
-            }
-
-            /* Animations */
-            @keyframes sm_in {
-               from {opacity: 0.5;}
-                to {opacity: 1;}
-            }
-
-            @keyframes sm_out {
-               from {opacity: 1;}
-              to {opacity: 0.5;}
-            }
-
-            /* Style all font awesome icons */
-            .fa {
-  padding: 0px;
-  padding-left: 10px;
-  font-size: 30px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  
-  opacity: 0.5;
-}
-
-
-.fa:hover {
-  animation-name: sm_in;
-  animation-duration: 1s;
-}
-
-.fa:not(:hover) {
-  animation-name: sm_out;
-  animation-duration: 1s;
-}
-            </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
@@ -96,95 +21,176 @@
         <!-- N -->
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     </head>
+    <style>
+        /* a {font-family: 'Source Code Pro', monospace; color: #FFF;} */
+        body {
+          background-color: #000;
+        }
 
-    <body>
-      <div style="text-align: center; height: 100px; color: #FFF; display: none;" id="after-load">
-        <div style="text-align: center;">
-          <a href="/"><img src="/assets/wolfite-full.png" width="15%"></a>
-        </div>
-        <h1 style="font-size: small;">This index is only temporary.</h1>
-        <br>
+        .button {
+          background-color: #000;
+          border-radius: 40%;
+          color: #FFF;
+          /* opacity: 0; */
+        }
 
-        <!-- <div style="text-align: center;" id="social-media">
-          <a href="/r/youtube.html" class="w3-button w3-round-xlarge">YouTube</a> <a href="/r/twitter.html" class="w3-button w3-round-xlarge">Twitter</a> <a href="/join.html" class="w3-button w3-round-xlarge">Join</a> 
-          <a href="https://wolfite.net/rss/r/youtube_subconfirmationreq" target="_blank"><img class="fa"  src="https://user-images.githubusercontent.com/100052562/188423441-80d347dd-5720-461d-bc71-de3228d4acd5.png"></a>
-<a href="https://wolfite.net/r/twitter" target="_blank" ><img class="fa" src="https://user-images.githubusercontent.com/100052562/188423898-c46fa7b2-e3bb-44d1-bc00-e3cc4b587b7a.png"></a>
-<a href="https://wolfite.net/r/patreon" target="_blank" ><img class="fa" src="https://cdn.wolfite.net/icons/patreon/512x512.png"></a>
-<a href="https://wolfite.net/r/website" target="_blank" ><img class="fa" src="https://user-images.githubusercontent.com/100052562/188424973-f75ad3d9-3f65-4174-b480-739979c1934b.png"></a>
-        </div> -->
+        .hl {
+            color: rgb(0, 128, 255);
+            text-decoration: none;
+        }
 
-        <div style="text-align: center;" class="social-media" id="after-load">
-            <!-- <p>Social Media</p> -->
-            <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        hr {
+          border-radius: 1em;
+        }
 
-<!-- Add font awesome icons -->
-<a href="https://wolfite.net/r/youtube" target="_blank"><img class="fa"  src="https://user-images.githubusercontent.com/100052562/188423441-80d347dd-5720-461d-bc71-de3228d4acd5.png"></a>
-<a href="https://wolfite.net/r/twitter" target="_blank" ><img class="fa" src="https://user-images.githubusercontent.com/100052562/188423898-c46fa7b2-e3bb-44d1-bc00-e3cc4b587b7a.png"></a>
-<a href="https://wolfite.net/r/patreon" target="_blank" ><img class="fa" src="https://cdn.wolfite.net/icons/patreon/512x512.png"></a>
-<!-- <a href="https://wolfite.net/r/github" target="_blank" ><img class="fa" src="https://cdn.wolfite.net/icons/github/512x512.png"></a> -->
-<a href="https://wolfite.net/r/website" target="_blank" ><img class="fa" src="https://user-images.githubusercontent.com/100052562/188424973-f75ad3d9-3f65-4174-b480-739979c1934b.png"></a>
-       </div>
+        a {
+          text-decoration: none;
+        }
 
-        <div style="text-align: center; margin-left: 20%; margin-right: 20%;" id="projects" >
-          <h1 class="page-header" style="text-align: left; color: rgb(200, 200, 200); font-size: 150%;">Projects</h1>
-          <hr>
-
-          <div style="text-align: left; display: grid;" class="grid-container">
-            <!-- <h1 class="page-header" style="text-align: center;">This is a little empty :(</h1> -->
-            <!-- <a href="/wos" target="_blank" class="w3-button w3-round-xlarge"></i>Wolfite's Obby System <i class="fi fi-sr-arrow-up-right-from-square"></i></a> -->
-
-            <div id="wos" class="grid-item" style="background-color: #00000070;  text-align: center; border-radius: 0.5em; display: inline;">
-              <a href="//wolfite.net/wos" target="_blank">
-                <div style="padding-top: 4%;"><img src="//cdn.wolfite.net/favicons/WOU.ico" style="width: 80%; height: 80%;"></div>
-              <h1 style="font-size: medium;"><b>Wolfite's Obby System</b></h1>
-              <h2 style="font-size: small; color: #9a9a9a;"><b>1,400 USES*</b></h2>
-              <div style="text-align: right; padding-right: 2%;"><span class="material-symbols-outlined">open_in_new</span></div>
-              </a>
-            </div>
-            
-            
-            <div id="plugins" class="grid-item" style="background-color: #00000070;  text-align: center; border-radius: 0.5em; display: inline;">
-              <a href="//wolfite.net/plugins" target="_blank">
-                <div style="padding-top: 4%;"><img src="//cdn.wolfite.net/favicons/WOU.ico" style="width: 80%; height: 80%;"></div>
-              <h1 style="font-size: medium;"><b>Plugins</b></h1>
-              <br>
-              <h2 style="font-size: small; color: #9a9a9a;"><b>2,400 INSTALLS*</b></h2>
-              <div style="text-align: right;"><span class="material-symbols-outlined">open_in_new</span></div>
-              </a>
-            </div>
-            
-          </div>
-        </div>
+        .grid-container {
+           display: grid;
+           row-gap: 4px;
+           column-gap: 0px;
+           grid-template-columns: 180px 180px auto;
           
+          
+        }
+
+
+        .grid-item {
+          padding: 2px;
+          display: inline-block;
+          width: 140px;
+        }
+
+        /* Animations */
+        @keyframes sm_in {
+           from {opacity: 0.5;}
+            to {opacity: 1;}
+        }
+
+        @keyframes sm_out {
+           from {opacity: 1;}
+          to {opacity: 0.5;}
+        }
+
+        @media only screen and (max-width: 900px) {
+          .wolfite-logo {
+            width: 35%
+          }
+        }
+
+        /* Style all font awesome icons */
+        .fa {
+padding: 0px;
+padding-left: 10px;
+font-size: 30px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+
+opacity: 0.5;
+}
+
+
+.fa:hover {
+animation-name: sm_in;
+animation-duration: 1s;
+}
+
+.fa:not(:hover) {
+animation-name: sm_out;
+animation-duration: 1s;
+}
+        </style>
+    <body>
+        <div style="text-align: center; height: 100px; color: #FFF; display: none;" id="after-load">
+            <div style="text-align: center;">
+              <a href="/"><img src="/assets/wolfite-full.png" width="15%" alt="Wolfite Logo" class="wolfite-logo"></a>
+            </div>
+            <!-- <h1 style="font-size: small;">This index is only temporary.</h1> -->
+            <br>
+    
+            <!-- <div style="text-align: center;" id="social-media">
+              <a href="/r/youtube.html" class="w3-button w3-round-xlarge">YouTube</a> <a href="/r/twitter.html" class="w3-button w3-round-xlarge">Twitter</a> <a href="/join.html" class="w3-button w3-round-xlarge">Join</a> 
+              <a href="https://wolfite.net/rss/r/youtube_subconfirmationreq" target="_blank"><img class="fa"  src="https://user-images.githubusercontent.com/100052562/188423441-80d347dd-5720-461d-bc71-de3228d4acd5.png"></a>
+    <a href="https://wolfite.net/r/twitter" target="_blank" ><img class="fa" src="https://user-images.githubusercontent.com/100052562/188423898-c46fa7b2-e3bb-44d1-bc00-e3cc4b587b7a.png"></a>
+    <a href="https://wolfite.net/r/patreon" target="_blank" ><img class="fa" src="https://cdn.wolfite.net/icons/patreon/512x512.png"></a>
+    <a href="https://wolfite.net/r/website" target="_blank" ><img class="fa" src="https://user-images.githubusercontent.com/100052562/188424973-f75ad3d9-3f65-4174-b480-739979c1934b.png"></a>
+            </div> -->
+    
+            <div style="text-align: center;" class="social-media" id="after-load">
+                <!-- <p>Social Media</p> -->
+                <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Add font awesome icons -->
+    <a href="https://wolfite.net/r/youtube" target="_blank"><img class="fa"  src="https://user-images.githubusercontent.com/100052562/188423441-80d347dd-5720-461d-bc71-de3228d4acd5.png"></a>
+    <a href="https://wolfite.net/r/twitter" target="_blank" ><img class="fa" src="https://user-images.githubusercontent.com/100052562/188423898-c46fa7b2-e3bb-44d1-bc00-e3cc4b587b7a.png"></a>
+    <a href="https://wolfite.net/r/patreon" target="_blank" ><img class="fa" src="https://cdn.wolfite.net/icons/patreon/512x512.png"></a>
+    <!-- <a href="https://wolfite.net/r/github" target="_blank" ><img class="fa" src="https://cdn.wolfite.net/icons/github/512x512.png"></a> -->
+    <a href="https://wolfite.net/r/website" target="_blank" ><img class="fa" src="https://user-images.githubusercontent.com/100052562/188424973-f75ad3d9-3f65-4174-b480-739979c1934b.png"></a>
+           </div>
+    
+            <div style="text-align: center; margin-left: 20%; margin-right: 20%;" id="projects" >
+              <h1 class="page-header" style="text-align: left; color: rgb(200, 200, 200); font-size: 150%;">Projects</h1>
+              <hr>
+    
+              <div style="text-align: left; display: grid;" class="grid-container">
+                <!-- <h1 class="page-header" style="text-align: center;">This is a little empty :(</h1> -->
+                <!-- <a href="/wos" target="_blank" class="w3-button w3-round-xlarge"></i>Wolfite's Obby System <i class="fi fi-sr-arrow-up-right-from-square"></i></a> -->
+    
+                <div id="wos" class="grid-item" style="background-color: #00000070;  text-align: center; border-radius: 0.5em; display: inline;">
+                  <a href="//wolfite.net/wos" target="_blank">
+                    <div style="padding-top: 4%;"><img src="//cdn.wolfite.net/favicons/WOU.ico" style="width: 80%; height: 80%;"></div>
+                  <h1 style="font-size: medium;"><b>Wolfite's Obby System</b></h1>
+                  <h2 style="font-size: small; color: #9a9a9a;"><b>1,400 USES*</b></h2>
+                  <div style="text-align: right; padding-right: 2%;"><span class="material-symbols-outlined">open_in_new</span></div>
+                  </a>
+                </div>
+                
+                
+                <div id="plugins" class="grid-item" style="background-color: #00000070;  text-align: center; border-radius: 0.5em; display: inline;">
+                  <a href="//wolfite.net/plugins" target="_blank">
+                    <div style="padding-top: 4%;"><img src="//cdn.wolfite.net/favicons/WOU.ico" style="width: 80%; height: 80%;"></div>
+                  <h1 style="font-size: medium;"><b>Plugins</b></h1>
+                  <br>
+                  <h2 style="font-size: small; color: #9a9a9a;"><b>8,000+ INSTALLS*</b></h2>
+                  <div style="text-align: right;"><span class="material-symbols-outlined">open_in_new</span></div>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+              
+            </div>
+            <!-- <h1 class="page-header">wolfite.net</h1> -->
+          </div>
+    
+          <div style="text-align: center; height: 100px; color: #FFF;" id="loading">
+            <!-- <h1 class="page-header">Loading...</h1> -->
+            <div class="loader center hideable-loader" id="loader" style="display: block;"></div>
+          </div>
+    
+          <div id="bottom" style="position:absolute; bottom:0; width:100%; height:60px; text-align: center;">
+                
+            <p class="font-codepro sub-header" style="color: #FFF;">2023 Wolfite - *ESTIMATED FROM "SALES"</p>
         </div>
-        <!-- <h1 class="page-header">wolfite.net</h1> -->
-      </div>
-
-      <div style="text-align: center; height: 100px; color: #FFF;" id="loading">
-        <!-- <h1 class="page-header">Loading...</h1> -->
-        <div class="loader center hideable-loader" id="loader" style="display: block;"></div>
-      </div>
-
-      <div id="bottom" style="position:absolute; bottom:0; width:100%; height:60px; text-align: center;">
             
-        <p class="font-codepro sub-header" style="color: #FFF;">2023 Wolfite - *ESTIMATED FROM "SALES"</p>
-    </div>
-        
-        <h1 class="page-header" style="display:none; text-align: center;" id="2ndText">⚠︎ Failed to load. Please try again later.</h1>
-       <script>
-            var cooldown;
-
-function show() {
-  cooldown = setTimeout(showPage, 500);
-}
-
-function showPage() {
-  document.getElementById("loading").style.display = "none";
-  document.getElementById("after-load").style.display = "block";
-  // document.getElementById("2ndText").style.display = "block";
-}
-show();
-        </script>
+            <h1 class="page-header" style="display:none; text-align: center;" id="2ndText">⚠︎ Failed to load. Please try again later.</h1>
+           <script>
+                var cooldown;
+    
+    function show() {
+      cooldown = setTimeout(showPage, 500);
+    }
+    
+    function showPage() {
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("after-load").style.display = "block";
+      // document.getElementById("2ndText").style.display = "block";
+    }
+    show();
+            </script>
     </body>
 </html>
