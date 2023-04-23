@@ -1,351 +1,364 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<html>
-    <head>
-        <title>About | Wolfite's Obby System</title>
-        <link rel="stylesheet" href="https://wolfite.net/styles/global.css"> 
-        <link rel="icon" type="image/x-icon" href="https://cdn.wolfite.net/favicons/WOU.ico">
+    <html>
+        <head>
+            <title>About | Wolfite's Obby System</title>
+            <link rel="stylesheet" href="https://wolfite.net/styles/global.css"> 
+            <link rel="icon" type="image/x-icon" href="https://cdn.wolfite.net/favicons/WOU.ico">
 
-        <style>
-            body {
-              background-image: url('https://cdn.wolfite.net/bg/m/1.png');
-              background-color: #000;
-            }
+            <meta property="og:site_name" content="Wolfite"/>
+            <meta property="og:title" content="Wolfite's Obby System"/>
+            <meta property="og:description" content="Wolfite's Obby System is the #1 obby system to create an obby on Roblox. Capable of many common features found in obbies on Roblox, and only growing. With over 40 customizable options, you can make the game you desire without ever having to worry about programming or any interface."/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:url" content="https://wolfite.net/wos"/>
+            <meta property="og:image" content="https://cdn.wolfite.net/favicons/WOU.ico" />
 
-            .button {
-              background-color: #000;
-              border-radius: 40%;
-              color: #FFF;
-              /* opacity: 0; */
-            }
+            <meta property="og:locale" content="en-us"/>
+            <meta property="og:locale:alternate" content="en-au"/>
+            <meta property="og:locale:alternate" content="en-gb"/>
+            <meta property="og:locale:alternate" content="en-uk"/>
+            <meta property="og:locale:alternate" content="en-ca"/>
 
-            .hl {
-                color: rgb(0, 128, 255);
-                text-decoration: none;
-            }
-            
-            h1 {
+            <style>
+                body {
+                background-image: url('https://cdn.wolfite.net/bg/m/1.png');
+                background-color: #000;
+                }
+
+                .button {
+                background-color: #000;
+                border-radius: 40%;
                 color: #FFF;
-            }
-            p {
-                color: rgb(222, 222, 222);
-            }
+                /* opacity: 0; */
+                }
 
-            il {
-                text-decoration: none;
-            }
+                .hl {
+                    color: rgb(0, 128, 255);
+                    text-decoration: none;
+                }
+                
+                h1 {
+                    color: #FFF;
+                }
+                p {
+                    color: rgb(222, 222, 222);
+                }
 
-            sub {
-                color: rgb(100, 100, 100);
-            }
+                il {
+                    text-decoration: none;
+                }
 
-            .logo {
-                width: 90%;
-            }
-
-            .frame {
-                border-radius: 1em;
-            }
-
-            .feature-header {
-                font-size: 180%;
-                text-align: left;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            .feature-desc {
-                font-size: small;
-                text-align: left;
-                padding-left: 10px;
-                padding-top: 1px;
-                padding-right: 10px;
-                padding-bottom: 10px;
-            }
-
-            .desktop-desc {
-                display: block;
-            }
-
-            .mobile-desc {
-                display: none;
-            }
-
-
-
-            @media only screen and (max-width: 1200px) {
-                .frame {
-                    width: 90% !important;
-                    font-size: small;
+                sub {
+                    color: rgb(100, 100, 100);
                 }
 
                 .logo {
-                    width: 98%;
+                    width: 90%;
                 }
 
-                .feature-contain {
-                    width: 100%;
-                }
-
-                .desktop-desc {
-                    display: none !important;
-                }
-
-                .mobile-desc {
-                    display: block !important;
-                }
-            }
-
-            @media only screen and (min-width: 3600px) {
                 .frame {
-                    width: 99% !important;
-                    border-radius: 2em !important;
-                    margin-top: 2% !important;
-                }
-
-                .frame #frame-header {
-                    font-size: 600% !important;
-                }
-
-                .frame #frame-desc {
-                    font-size: 300% !important;
-                }
-
-                .feature-contain {
-                    height: 180px !important;
-                    border-radius: 2em !important;
+                    border-radius: 1em;
                 }
 
                 .feature-header {
-                    font-size: 300%;
+                    font-size: 180%;
+                    text-align: left;
+                    padding-left: 10px;
+                    padding-right: 10px;
                 }
-
                 .feature-desc {
-                    font-size: 200%;
+                    font-size: small;
+                    text-align: left;
+                    padding-left: 10px;
+                    padding-top: 1px;
+                    padding-right: 10px;
+                    padding-bottom: 10px;
                 }
 
-                .logo {
-                    width: 99.5%;
+                .desktop-desc {
+                    display: block;
                 }
 
-                .feature-contain {
-                    width: 100%;
+                .mobile-desc {
+                    display: none;
                 }
-            }
 
-            </style>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-        <!-- N -->
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-    </head>
 
-    <body>
-        
-      <div style="text-align: center; width: 100%; height: 20%;">
-            <!-- help --> <!-- <h1><b>Wolfite's Obby System</b></h1> -->
-            <img src="//cdn.wolfite.net/logos/wos/WOSTransparentHorizontalLogo.png" class="logo">
-            <br>
-      </div>
+                @media only screen and (max-width: 1200px) {
+                    .frame {
+                        width: 90% !important;
+                        font-size: small;
+                    }
 
-      <div style="text-align: center; width: 60%; background-color: rgba(0, 0, 0, 0.5); height: 80%; margin: auto;" id="about" class="frame">
+                    .logo {
+                        width: 98%;
+                    }
+
+                    .feature-contain {
+                        width: 100%;
+                    }
+
+                    .desktop-desc {
+                        display: none !important;
+                    }
+
+                    .mobile-desc {
+                        display: block !important;
+                    }
+                }
+
+                @media only screen and (min-width: 3600px) {
+                    .frame {
+                        width: 99% !important;
+                        border-radius: 2em !important;
+                        margin-top: 2% !important;
+                    }
+
+                    .frame #frame-header {
+                        font-size: 600% !important;
+                    }
+
+                    .frame #frame-desc {
+                        font-size: 300% !important;
+                    }
+
+                    .feature-contain {
+                        height: 180px !important;
+                        border-radius: 2em !important;
+                    }
+
+                    .feature-header {
+                        font-size: 300%;
+                    }
+
+                    .feature-desc {
+                        font-size: 200%;
+                    }
+
+                    .logo {
+                        width: 99.5%;
+                    }
+
+                    .feature-contain {
+                        width: 100%;
+                    }
+                }
+
+                </style>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+            <!-- N -->
+            <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        </head>
+
+        <body>
+            
+        <div style="text-align: center; width: 100%; height: 20%;">
+                <!-- help --> <!-- <h1><b>Wolfite's Obby System</b></h1> -->
+                <img src="//cdn.wolfite.net/logos/wos/WOSTransparentHorizontalLogo.png" class="logo">
+                <br>
+        </div>
+
+        <div style="text-align: center; width: 60%; background-color: rgba(0, 0, 0, 0.5); height: 80%; margin: auto;" id="about" class="frame">
+            <h1 id="frame-header">
+                <b>
+                About
+                </b>
+            </h1>
+            <p id="frame-desc">
+                Wolfite's Obby System is the <b>#1</b> obby system to create an obby on Roblox. Capable of many common features found in obbies on Roblox, and only growing. With over <b>40</b> customizable options, you can make the game you desire without ever having to worry about programming or any interface. Do you use WOS? Click <a class="hl" href="https://twitter.com/intent/tweet?text=Wolfite's%20Obby%20System%20(%23WolfitesObbySystem)%20helped%20me%20make%20my%20own%20obby%20for%20free!%20Go%20check%20it%20out%20%40%20https%3A%2F%2Fwolfite.net%2Fwos%20%7C%20%23Wolfite%20%23Roblox%20%23Robloxdev%20%20%20" target="_blank">here</a> to tweet and let us know!
+            </p>
+            <p class="sub" style="color: rgb(187, 187, 187);"><a class="hl" href="/wos/premium">WOS 0.8.4 now available!</a></p>
+            &nbsp;
+    </div>
+
+    <div style="text-align: center; width: 60%; background-color: rgba(0, 0, 0, 0.5); height: 80%; margin: auto;" id="features" class="frame">
         <h1 id="frame-header">
             <b>
-            About
+            Features
             </b>
         </h1>
         <p id="frame-desc">
-            Wolfite's Obby System is the <b>#1</b> obby system to create an obby on Roblox. Capable of many common features found in obbies on Roblox, and only growing. With over <b>40</b> customizable options, you can make the game you desire without ever having to worry about programming or any interface. Do you use WOS? Click <a class="hl" href="https://twitter.com/intent/tweet?text=Wolfite's%20Obby%20System%20(%23WolfitesObbySystem)%20helped%20me%20make%20my%20own%20obby%20for%20free!%20Go%20check%20it%20out%20%40%20https%3A%2F%2Fwolfite.net%2Fwos%20%7C%20%23Wolfite%20%23Roblox%20%23Robloxdev%20%20%20" target="_blank">here</a> to tweet and let us know!
+            Wolfite's Obby System has many features. Here's some of the highlights:<br>
+            (click for more info)
         </p>
-        <p class="sub" style="color: rgb(187, 187, 187);"><a class="hl" href="/wos/premium">WOS 0.8.4 now available!</a></p>
+        <div style="margin: auto; text-align: center; width: 100%;">
+            <ul style="color: #FFF; text-align: center;">
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/stage-selector.html" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>Stage Selector</b></h1>
+                            <!-- The WOS stage selector is a convenient and user-friendly feature that allows users to quickly and easily navigate through different stages. With the use of simple arrow buttons, users can scroll through the stages to find the one they need. Click here for more information. -->
+                            <h1 class="feature-desc desktop-desc">The WOS stage selector is a convenient and user-friendly feature that allows users to quickly and easily navigate through different stages. With the use of simple arrow buttons, users can scroll through the stages to find the one they need. Click here for more information.</h1>
+                            <h1 class="feature-desc mobile-desc">The WOS stage selector is a convenient and user-friendly feature that allows users to quickly and easily navigate through different stages.</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/checkpoints.html" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>Animated Checkpoints</b></h1>
+                            <!-- WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints. With a variety of animation styles to choose from, including classic, spin, world, and color-only, users can tailor their checkpoints to match the look and feel of their game. -->
+                            <h1 class="feature-desc desktop-desc">WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints. With a variety of animation styles to choose from, including classic, spin, world, and color-only, users can tailor their checkpoints to match the look and feel of their game.</h1>
+                            <h1 class="feature-desc mobile-desc">WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints.</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/misc#progress-bar" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>Progress Bar</b></h1>
+                            <h1 class="feature-desc desktop-desc">The progress bar is a simple feature that lets the user knows how close they are to completing an obby. If a user has completed 74 stages out of 100, the progress bar will be 74% to the end of the container.</h1>
+                            <h1 class="feature-desc mobile-desc">The progress bar is a simple feature that lets the user knows how close they are to completing an obby.</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/misc#progress-bar" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>Stage Indicator</b></h1>
+                            <h1 class="feature-desc desktop-desc">The stage indicator is a small but common feature in obbies. It simple creates an arrow above the next checkpoint that a player can see through walls so that they know where to go.</h1>
+                            <h1 class="feature-desc mobile-desc">The stage indicator is a small but common feature in obbies. It simple creates an arrow above the next checkpoint that a player...</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/misc#progress-bar" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>Easy Monetization</b></h1>
+                            <h1 class="feature-desc desktop-desc">WOS provides easy and great monetization methods, click here for more information.</h1>
+                            <h1 class="feature-desc mobile-desc">WOS provides easy and great monetization methods, click here for more information.</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/misc#redacted-strings" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>Redacted Strings (Chat)</b></h1>
+                            <h1 class="feature-desc desktop-desc">Tired of people spamming you for admin? Fret no longer. Easy tag common annoying terms out of existance.</h1>
+                            <h1 class="feature-desc mobile-desc">Tired of people spamming you for admin? Fret no longer.</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/misc#badges" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>Badges</b></h1>
+                            <h1 class="feature-desc desktop-desc">Badges were always so annoying, giving badges to someone if they just touched a checkpoint. Even if they weren't alive, or were exploiting. Those days are far gone. Now, all you have to do is type the stage number, and then the BadgeID. It's really that simple, it takes longer to make the badge.</h1>
+                            <h1 class="feature-desc mobile-desc">Badges were always so annoying, giving badges to someone if they just touched a checkpoint. Those days are far gone.</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/mobile-shiftlock" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>Draggable Mobile Shiftlock</b></h1>
+                            <h1 class="feature-desc desktop-desc">Mobile shiftlock was a blessing for all mobile players. Now, it's gotten even better. Mobile players have the luxury of dragging their shiftlock to any position they want.</h1>
+                            <h1 class="feature-desc mobile-desc">Mobile shiftlock was a blessing for all mobile players. Now, it's gotten even better...</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;" id="chat-tags">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/chat-tags" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>Chat Tags</b></h1>
+                            <h1 class="feature-desc desktop-desc">You had to sift through broken models, bad colors, and find someone's UserID every time you just wanted a simple chat tag. Soon, that won't be necessary at all. Coming in WOS 0.8.3, you will be able to easily assign chat tags and colors via someone's UserID or their username.</h1>
+                            <h1 class="feature-desc mobile-desc">Chat Tags are coming in WOS 0.8.3, you can view more information on your desktop.</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+                <il style="text-align: center; width: 100%; display: flex; justify-content: center;" id="chat-tags">
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
+                        <a href="/wos/features/misc#system-messages" style="text-decoration: none;">
+                            <h1 class="feature-header"><b>System Messages</b></h1>
+                            <h1 class="feature-desc desktop-desc">Add some extra messages to the chat, promote whatever you want.</h1>
+                            <h1 class="feature-desc mobile-desc">Add some extra messages to the chat, promote whatever you want.</h1>
+                        </a>
+                    </div>
+                </il>
+                <br>
+            </ul>
+            <p>And there's <a class="hl" href="/wos/features/more">more</a>!</p>
+        </div>
+        <!-- <div style="margin: auto; text-align: center;">
+            <ul style="color: #FFF; text-align: center;">
+                <il style="text-align: center;">
+                    <a class="hl" href="/wos/features/stage-selector">
+                        <p style="text-align: left;">• Stage Selector</p>
+                    </a>
+                </il>
+                <il style="text-align: center;">
+                    <a class="hl" href="/wos/features/checkpoints">
+                        <p style="text-align: left;">• Animated Checkpoints</p>
+                    </a>
+                </il>
+                <il style="text-align: center;">
+                    <a class="hl" href="/wos/features/misc#progress-bar">
+                        <p style="text-align: left;">• Progress Bar</p>
+                    </a>
+                </il>
+                <il style="text-align: center;">
+                    <a class="hl" href="/wos/features/stage-indicator">
+                        <p style="text-align: left;">• Stage Indicator</p>
+                    </a>
+                </il>
+                <il style="text-align: center;">
+                    <a class="hl" href="/wos/features/monetization">
+                        <p style="text-align: left;">• Easy Monetization</p>
+                    </a>
+                </il>
+                <il style="text-align: center;">
+                    <a class="hl" href="/wos/features/redacted-strings">
+                        <p style="text-align: left;">• Custom Chat Filters</p>
+                    </a>
+                </il>
+                <il style="text-align: center;">
+                    <a class="hl" href="/wos/features/banned-users">
+                        <p style="text-align: left;">• Banned Users</p>
+                    </a>
+                </il>
+                <il style="text-align: center;">
+                    <a class="hl" href="/wos/features/badges">
+                        <p style="text-align: left;">• Badges</p>
+                    </a>
+                </il>
+                <il style="text-align: center;">
+                    <a class="hl" href="/wos/features/mobile-shiftlock">
+                        <p style="text-align: left;">• Mobile Shiftlock (Draggable)</p>
+                    </a>
+                </il>
+            </ul>
+            <p>And there's <a class="hl" href="/wos/features/more">more</a>!</p>
+        </div> -->
         &nbsp;
-  </div>
-
-  <div style="text-align: center; width: 60%; background-color: rgba(0, 0, 0, 0.5); height: 80%; margin: auto;" id="features" class="frame">
-    <h1 id="frame-header">
-        <b>
-        Features
-        </b>
-    </h1>
-    <p id="frame-desc">
-        Wolfite's Obby System has many features. Here's some of the highlights:<br>
-        (click for more info)
-    </p>
-    <div style="margin: auto; text-align: center; width: 100%;">
-        <ul style="color: #FFF; text-align: center;">
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/stage-selector.html" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Stage Selector</b></h1>
-                        <!-- The WOS stage selector is a convenient and user-friendly feature that allows users to quickly and easily navigate through different stages. With the use of simple arrow buttons, users can scroll through the stages to find the one they need. Click here for more information. -->
-                        <h1 class="feature-desc desktop-desc">The WOS stage selector is a convenient and user-friendly feature that allows users to quickly and easily navigate through different stages. With the use of simple arrow buttons, users can scroll through the stages to find the one they need. Click here for more information.</h1>
-                        <h1 class="feature-desc mobile-desc">The WOS stage selector is a convenient and user-friendly feature that allows users to quickly and easily navigate through different stages.</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/checkpoints.html" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Animated Checkpoints</b></h1>
-                        <!-- WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints. With a variety of animation styles to choose from, including classic, spin, world, and color-only, users can tailor their checkpoints to match the look and feel of their game. -->
-                        <h1 class="feature-desc desktop-desc">WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints. With a variety of animation styles to choose from, including classic, spin, world, and color-only, users can tailor their checkpoints to match the look and feel of their game.</h1>
-                        <h1 class="feature-desc mobile-desc">WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints.</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/misc#progress-bar" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Progress Bar</b></h1>
-                        <h1 class="feature-desc desktop-desc">The progress bar is a simple feature that lets the user knows how close they are to completing an obby. If a user has completed 74 stages out of 100, the progress bar will be 74% to the end of the container.</h1>
-                        <h1 class="feature-desc mobile-desc">The progress bar is a simple feature that lets the user knows how close they are to completing an obby.</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/misc#progress-bar" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Stage Indicator</b></h1>
-                        <h1 class="feature-desc desktop-desc">The stage indicator is a small but common feature in obbies. It simple creates an arrow above the next checkpoint that a player can see through walls so that they know where to go.</h1>
-                        <h1 class="feature-desc mobile-desc">The stage indicator is a small but common feature in obbies. It simple creates an arrow above the next checkpoint that a player...</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/misc#progress-bar" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Easy Monetization</b></h1>
-                        <h1 class="feature-desc desktop-desc">WOS provides easy and great monetization methods, click here for more information.</h1>
-                        <h1 class="feature-desc mobile-desc">WOS provides easy and great monetization methods, click here for more information.</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/misc#redacted-strings" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Redacted Strings (Chat)</b></h1>
-                        <h1 class="feature-desc desktop-desc">Tired of people spamming you for admin? Fret no longer. Easy tag common annoying terms out of existance.</h1>
-                        <h1 class="feature-desc mobile-desc">Tired of people spamming you for admin? Fret no longer.</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/misc#badges" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Badges</b></h1>
-                        <h1 class="feature-desc desktop-desc">Badges were always so annoying, giving badges to someone if they just touched a checkpoint. Even if they weren't alive, or were exploiting. Those days are far gone. Now, all you have to do is type the stage number, and then the BadgeID. It's really that simple, it takes longer to make the badge.</h1>
-                        <h1 class="feature-desc mobile-desc">Badges were always so annoying, giving badges to someone if they just touched a checkpoint. Those days are far gone.</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/mobile-shiftlock" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Draggable Mobile Shiftlock</b></h1>
-                        <h1 class="feature-desc desktop-desc">Mobile shiftlock was a blessing for all mobile players. Now, it's gotten even better. Mobile players have the luxury of dragging their shiftlock to any position they want.</h1>
-                        <h1 class="feature-desc mobile-desc">Mobile shiftlock was a blessing for all mobile players. Now, it's gotten even better...</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;" id="chat-tags">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/chat-tags" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Chat Tags</b></h1>
-                        <h1 class="feature-desc desktop-desc">You had to sift through broken models, bad colors, and find someone's UserID every time you just wanted a simple chat tag. Soon, that won't be necessary at all. Coming in WOS 0.8.3, you will be able to easily assign chat tags and colors via someone's UserID or their username.</h1>
-                        <h1 class="feature-desc mobile-desc">Chat Tags are coming in WOS 0.8.3, you can view more information on your desktop.</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;" id="chat-tags">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="/wos/features/misc#system-messages" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>System Messages</b></h1>
-                        <h1 class="feature-desc desktop-desc">Add some extra messages to the chat, promote whatever you want.</h1>
-                        <h1 class="feature-desc mobile-desc">Add some extra messages to the chat, promote whatever you want.</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-        </ul>
-        <p>And there's <a class="hl" href="/wos/features/more">more</a>!</p>
     </div>
-    <!-- <div style="margin: auto; text-align: center;">
-        <ul style="color: #FFF; text-align: center;">
-            <il style="text-align: center;">
-                <a class="hl" href="/wos/features/stage-selector">
-                    <p style="text-align: left;">• Stage Selector</p>
-                </a>
-            </il>
-            <il style="text-align: center;">
-                <a class="hl" href="/wos/features/checkpoints">
-                    <p style="text-align: left;">• Animated Checkpoints</p>
-                </a>
-            </il>
-            <il style="text-align: center;">
-                <a class="hl" href="/wos/features/misc#progress-bar">
-                    <p style="text-align: left;">• Progress Bar</p>
-                </a>
-            </il>
-            <il style="text-align: center;">
-                <a class="hl" href="/wos/features/stage-indicator">
-                    <p style="text-align: left;">• Stage Indicator</p>
-                </a>
-            </il>
-            <il style="text-align: center;">
-                <a class="hl" href="/wos/features/monetization">
-                    <p style="text-align: left;">• Easy Monetization</p>
-                </a>
-            </il>
-            <il style="text-align: center;">
-                <a class="hl" href="/wos/features/redacted-strings">
-                    <p style="text-align: left;">• Custom Chat Filters</p>
-                </a>
-            </il>
-            <il style="text-align: center;">
-                <a class="hl" href="/wos/features/banned-users">
-                    <p style="text-align: left;">• Banned Users</p>
-                </a>
-            </il>
-            <il style="text-align: center;">
-                <a class="hl" href="/wos/features/badges">
-                    <p style="text-align: left;">• Badges</p>
-                </a>
-            </il>
-            <il style="text-align: center;">
-                <a class="hl" href="/wos/features/mobile-shiftlock">
-                    <p style="text-align: left;">• Mobile Shiftlock (Draggable)</p>
-                </a>
-            </il>
-        </ul>
-        <p>And there's <a class="hl" href="/wos/features/more">more</a>!</p>
-    </div> -->
-    &nbsp;
-</div>
 
-<div style="text-align: center; width: 100%; height: 20%;">
-    <p style="color: #000000 !important;"><b>Need to remove the watermarks? View premium </b><a class="hl" href="/wos/premium"><b>here</b></a>.</p>
-    <br>
-</div>
-    </body>
-</html>
+    <div style="text-align: center; width: 100%; height: 20%;">
+        <p style="color: #000000 !important;"><b>Need to remove the watermarks? View premium </b><a class="hl" href="/wos/premium"><b>here</b></a>.</p>
+        <br>
+    </div>
+        </body>
+    </html>
