@@ -1,5 +1,8 @@
 User-agent: *
 Disallow: /api/*/hidden
 
+Allow: /
+Allow: /wos
+
 # Details...
 Disallow: /api/fe2/map
