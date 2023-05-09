@@ -1,138 +1,130 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolfite's Obby System</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.wolfite.net/favicons/WOU.ico">
 
-<html>
-    <head>
-        <title>Premium | Wolfite's Obby System</title>
-        <link rel="stylesheet" href="https://wolfite.net/styles/global.css"> 
-        <link rel="icon" type="image/x-icon" href="https://cdn.wolfite.net/favicons/WOU.ico">
-        <script src=""></script>
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/wos/c/wos.css">
+    <script src="/wos/c/wos.js"></script>
 
-        <meta property="og:site_name" content="Wolfite"/>
-        <meta property="og:title" content="Wolfite's Obby System Premium"/>
-        <meta property="og:description" content="Take WOS to the next level. Get all new features, no watermarks, and more to come."/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://wolfite.net/wos/premium"/>
-        <meta property="og:image" content="https://cdn.wolfite.net/logos/wos/0.8.4.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-        <meta property="og:locale" content="en-us"/>
-        <meta property="og:locale:alternate" content="en-au"/>
-        <meta property="og:locale:alternate" content="en-gb"/>
-        <meta property="og:locale:alternate" content="en-uk"/>
-        <meta property="og:locale:alternate" content="en-ca"/>
-
-        <!-- WOS CSS -->
-        <link rel="stylesheet" href="/wos/wos.css">
-
-        <!-- N -->
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-    </head>
-
-    <body>
-        
-      <div style="text-align: center; width: 100%; height: 20%;">
-        <img src="//cdn.wolfite.net/logos/wos/WOSTransparentHorizontalLogo.png" class="logo">
+    <meta property="og:site_name" content="Wolfite"/>
+    <meta property="og:title" content="Wolfite's Obby System"/>
+    <meta property="og:description" content="Wolfite's Obby System is the #1 obby system to create an obby on Roblox. Capable of many common features found in obbies on Roblox, and only growing. With over 40 customizable options, you can make the game you desire without ever having to worry about programming or any interface."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://wolfite.net/wos"/>
+    <meta property="og:image" content="https://cdn.wolfite.net/logos/wos/premium.png"/>
+    <meta property="og:locale" content="en-us">
+    <meta property="og:locale:alternate" content="en-au">
+    <meta property="og:locale:alternate" content="en-gb">
+    <meta property="og:locale:alternate" content="en-uk">
+    <meta property="og:locale:alternate" content="en-ca">
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <div style="text-align: center; width: 100%; height: 20%;" class="logo"><a href="/wos/"><img src="//cdn.wolfite.net/logos/wos/WOSTransparentHorizontalLogo.png"></a><br></div>
+    <br><br>
+    <!-- <div class="text-display" id="stats" style="background-color: #00000000;">
+        <li class="stat" id="stat-1"> <img src="https://cdn.wolfite.net/icons/users-alt/512x512.png"> <h2>~400,000+</h2> <p><b>Combined Visits</b></p></li>
+        <li class="stat" id="stat-2"> <img src="https://cdn.wolfite.net/icons/checklist/512x512.png"> <h2>65</h2> <p><b>Awesome Features</b></p></li>
+        <li class="stat" id="stat-3"> <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h2>Free To Use</h2> <p><b>All basic features free</b></p></li>
+        <li class="stat" id="stat-4"> <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h2>Compatible</h2> <p><b>With tons of models</b></p></li>
+        <li class="stat" id="stat-5"> <img src="https://cdn.wolfite.net/icons/robux/260x260.png"> <h2>100,000+</h2> <p><b>Combined Revenue</b></p></li>
+    </div> -->
+    <br>
+    <!-- <p style="text-align: center; width: 100%;">Statistics from multiple games using WOS. <a href="/wos/disclaimers#statistics" target="_blank"><b>Learn more</b></a>.</p> -->
+    <div class="text-display" id="about-premium">
+            <h1>Premium</h1>
+            <hr>
+            <p>Take your obby to the next level with Wolfite's Obby System Premium. View features below.</p>
+            <button onclick="to_premium()">Get WOS Premium 0.8.5 here</button>
             <br>
-      </div>
-
-      <div style="text-align: center; width: 60%; background-color: rgba(0, 0, 0, 0.5); height: 80%; margin: auto;" id="about" class="frame">
-        <h1>
-            <b>
-            Premium
-            </b>
-        </h1>
-        <p>
-           WOS Premium is currently running on 0.8.5, the next update will release with WOS 0.8.6. A system like this may cost thousands more robux to get it developed yourself, or you could buy it for only 4,000 robux!
-        </p>
-        
-        <p class="sub" style="color: rgb(187, 187, 187);">Version: 0.8.5</p>
-        <p class="sub" style="color: rgb(187, 187, 187);"><a class="hl" href="/wos/t//premium">Get premium here!</a></p>
-        &nbsp;
-  </div>
-
-  <div style="text-align: center; width: 60%; background-color: rgba(0, 0, 0, 0.5); height: 80%; margin: auto;" id="features" class="frame">
-    <h1 id="frame-header">
-        <b>
-        Premium Features
-        </b>
-    </h1>
-    <p id="frame-desc">
-        That's right. WOS Premium will have all the features below when it releases properly.*
-    </p>
-    <div style="margin: auto; text-align: center; width: 100%;">
-        <ul style="color: #FFF; text-align: center;">
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="#nukes" style="text-decoration: none;">
-                        <h1 class="feature-header"><b> Nukes</b></h1>
-                        <!-- The WOS stage selector is a convenient and user-friendly feature that allows users to quickly and easily navigate through different stages. With the use of simple arrow buttons, users can scroll through the stages to find the one they need. Click here for more information. -->
-                        <h1 class="feature-desc desktop-desc">We've all seen them in other games. A simple button to nuke everyone in the server. Ours are special however. Your screen will change color and start shaking before the nuke hits.</h1>
-                        <h1 class="feature-desc mobile-desc">We've all seen them in other games. A simple button to nuke everyone in the server. Ours are special however.</h1>
-                    </a>
-                </div>
-            </il>
             <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="#skip10" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Skip 10 stages</b></h1>
-                        <!-- WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints. With a variety of animation styles to choose from, including classic, spin, world, and color-only, users can tailor their checkpoints to match the look and feel of their game. -->
-                        <h1 class="feature-desc desktop-desc">You can create developer product that lets player skip <b>10 stages</b> at once.</h1>
-                        <h1 class="feature-desc mobile-desc">You can create developer product that lets player skip <b>10 stages</b> at once.</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="#server-skip" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>Server Skip</b></h1>
-                        <!-- WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints. With a variety of animation styles to choose from, including classic, spin, world, and color-only, users can tailor their checkpoints to match the look and feel of their game. -->
-                        <h1 class="feature-desc desktop-desc">Let players skip the whole server. (developer product)</h1>
-                        <h1 class="feature-desc mobile-desc">Let players skip the whole server. (developer product)</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="#settings" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>More Settings</b></h1>
-                        <!-- WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints. With a variety of animation styles to choose from, including classic, spin, world, and color-only, users can tailor their checkpoints to match the look and feel of their game. -->
-                        <h1 class="feature-desc desktop-desc">Get more settings built in to WOS. Players can now hide other players, set the time of day to day, night, and their local time. They can also toggle easy mode if they have the gamepass.</h1>
-                        <h1 class="feature-desc mobile-desc">Get more settings built in to WOS. Players can now hide other players, set the time of day...</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-            <il style="text-align: center; width: 100%; display: flex; justify-content: center;">
-                
-                <div style="background-color: rgba(0, 0, 0, 0.9); width: 80%; height: 120px; border-radius: 1em;" class="feature-contain">
-                    <a href="#skip10" style="text-decoration: none;">
-                        <h1 class="feature-header"><b>No watermarks</b></h1>
-                        <!-- WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints. With a variety of animation styles to choose from, including classic, spin, world, and color-only, users can tailor their checkpoints to match the look and feel of their game. -->
-                        <h1 class="feature-desc desktop-desc">A clean and unwatermarked experience for your user. You won't be required to credit WOS Premium at all. Still appreciated though...</h1>
-                        <h1 class="feature-desc mobile-desc">A clean and unwatermarked experience for your user. You won't be required to credit WOS Premium at all. Still appreciated though...</h1>
-                    </a>
-                </div>
-            </il>
-            <br>
-        </ul>
-        <p>Too much? <a class="hl" href="/wos">WOS</a> is still free.</p>
     </div>
+    <div class="text-display" id="features">
+        <h1>Features</h1>
+        <hr>
+        <p style="color: #c5c5c5;">Wolfite's Obby System has many features. Here's some of the highlights:<br>(click for more info)</p>
+        <br>
+        <div class="feature-display" id="nukes">
+            <a href="/wos/docs/features/stage-selector">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Nukes</h1>
+            <p class="feature-desc desktop-desc">We are sure you have heard about nukes in other obbies. Nukes are a form of monetization (a developer product) which will reset every player to their current checkpoint with a few cool effects.</p>
+            <p class="feature-desc mobile-desc">We are sure you have heard about nukes in other obbies. Nukes are a form of monetization (a developer product) which will reset every player to their current checkpoint with a few cool effects.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="skip-10">
+            <a href="/wos/docs/features/stage-selector">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Skip 10 Stages</h1>
+            <p class="feature-desc desktop-desc">Allow players to buy 10 skips with one product. If you choose to enable this feature, it would just be like skipping normally, but 10 checkpoints at once!</p>
+            <p class="feature-desc mobile-desc">Allow players to buy 10 skips with one product.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="server-skip">
+            <a href="/wos/docs/features/stage-selector">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Server Skip</h1>
+            <p class="feature-desc desktop-desc">This monetization feature is really cool. It let's players skip the whole server. Effectively, it buys the whole server a skip stage for free.</p>
+            <p class="feature-desc mobile-desc">This monetization feature is really cool. It let's players skip the whole server.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="no-waternarks">
+            <a href="/wos/docs/features/stage-selector">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>No Watermarks</h1>
+            <p class="feature-desc desktop-desc">Tired of watermarks? WOS Premium comes with all of them optional.</p>
+            <p class="feature-desc mobile-desc">Tired of watermarks? WOS Premium comes with all of them optional.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        
+        <br>
+</div>
 
-
-<div style="text-align: center; width: 100%; height: 20%;">
-    <p>Premium removes watermarks and makes credit optional.</p>
+<div class="text-display" id="support">
+    <h1>Support & Socials</h1>
+    <hr>
+    <a href="/wos/faq"><b>FAQ</b></a>
+    <br>
+    <br>
+    <a href="https://wolfite.net/r/discord">
+        <img src="https://cdn.wolfite.net/icons/discord/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    &nbsp;
+    <a href="https://wolfite.net/r/twitter">
+        <img src="https://cdn.wolfite.net/icons/twitter/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    &nbsp;
+    <a href="https://wolfite.net/r/github">
+        <img src="https://cdn.wolfite.net/icons/github/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    &nbsp;
+    <a href="https://wolfite.net/r/youtube">
+        <img src="https://cdn.wolfite.net/icons/youtube/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    &nbsp;
+    <a href="https://wolfite.net/r/patreon">
+        <img src="https://cdn.wolfite.net/icons/patreon/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    <br>
     <br>
 </div>
-    </body>
+<p style="text-align: center; width: 100%;">Too much? <a href="/wos/" target="_blank"><b>WOS Basic</b></a> is still free.</p>
+<br>
+<br>
+</body>
 </html>
