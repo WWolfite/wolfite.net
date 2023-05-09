@@ -1,9 +1,196 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolfite's Obby System</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.wolfite.net/favicons/WOU.ico">
 
-<html>
-    <head>
-        <title>Redirecting - Wolfite</title>
-         <link rel="icon" type="image/x-icon" href="https://user-images.githubusercontent.com/100052562/185771273-74b847cd-09bb-4ea2-a246-97ceb9e83838.png">
-        <meta http-equiv="refresh" content="0; URL=/wos/about"/>
-    </head>
+    <link rel="stylesheet" href="/wos/c/wos.css">
+    <script src="/wos/c/wos.js"></script>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <meta property="og:site_name" content="Wolfite"/>
+    <meta property="og:title" content="Wolfite's Obby System"/>
+    <meta property="og:description" content="Wolfite's Obby System is the #1 obby system to create an obby on Roblox. Capable of many common features found in obbies on Roblox, and only growing. With over 40 customizable options, you can make the game you desire without ever having to worry about programming or any interface."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://wolfite.net/wos"/>
+    <meta property="og:image" content="https://cdn.wolfite.net/favicons/WOU.ico"/>
+    <meta property="og:locale" content="en-us">
+    <meta property="og:locale:alternate" content="en-au">
+    <meta property="og:locale:alternate" content="en-gb">
+    <meta property="og:locale:alternate" content="en-uk">
+    <meta property="og:locale:alternate" content="en-ca">
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <div style="text-align: center; width: 100%; height: 20%;" class="logo"><img src="//cdn.wolfite.net/logos/wos/WOSTransparentHorizontalLogo.png"><br></div>
+    <br><br>
+    <div class="text-display" id="stats" style="background-color: #00000000;">
+        <li class="stat" id="stat-1"> <img src="https://cdn.wolfite.net/icons/users-alt/512x512.png"> <h2>~400,000+</h2> <p><b>Combined Visits</b></p></li>
+        <li class="stat" id="stat-2"> <img src="https://cdn.wolfite.net/icons/checklist/512x512.png"> <h2>65</h2> <p><b>Awesome Features</b></p></li>
+        <li class="stat" id="stat-3"> <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h2>Free To Use</h2> <p><b>All basic features free</b></p></li>
+        <li class="stat" id="stat-4"> <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h2>Compatible</h2> <p><b>With tons of models</b></p></li>
+        <li class="stat" id="stat-5"> <img src="https://cdn.wolfite.net/icons/robux/260x260.png"> <h2>100,000+</h2> <p><b>Combined Revenue</b></p></li>
+    </div>
+    <br>
+    <p style="text-align: center; width: 100%;">Statistics from multiple games using WOS. <a href="/wos/disclaimers#statistics" target="_blank"><b>Learn more</b></a>.</p>
+    <div class="text-display" id="about">
+            <h1>About</h1>
+            <hr>
+            <p>Wolfite's Obby System is the #1 obby system to create an obby on Roblox. Capable of many common features found in obbies on Roblox, and only growing. With over 65 customizable options, you can make the game you desire without ever having to worry about programming or any interface.</p>
+            <button onclick="to_basic()">Get WOS 0.8.5 here</button>
+            <br>
+            <br>
+            <a href="https://twitter.com/Wolfite_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Wolfite_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="https://twitter.com/intent/tweet?screen_name=Wolfite_&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @Wolfite_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a href="https://twitter.com/intent/tweet?button_hashtag=WolfitesObbySystem" class="twitter-hashtag-button" data-show-count="false">Tweet #Wolfite_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <br>
+    </div>
+    <div class="text-display" id="features">
+        <h1>Features</h1>
+        <hr>
+        <p style="color: #c5c5c5;">Wolfite's Obby System has many features. Here's some of the highlights:<br>(click for more info)</p>
+        <br>
+        <div class="feature-display" id="stage-selector">
+            <a href="/wos/docs/features/stage-selector">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Stage Selector</h1>
+            <p class="feature-desc desktop-desc">The WOS stage selector is a convenient and user-friendly feature that allows users to quickly and easily navigate through different stages. With the use of simple arrow buttons, users can scroll through the stages to find the one they need. Click here for more information.</p>
+            <p class="feature-desc mobile-desc">The WOS stage selector is a convenient and user-friendly feature that allows users to quickly and easily navigate through different stages.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="checkpoints">
+            <a href="/wos/docs/features/checkpoints">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Animated Checkpoints</h1>
+            <p class="feature-desc desktop-desc">WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints. With a variety of animation styles to choose from, including classic, spin, world, and color-only, users can tailor their checkpoints to match the look and feel of their game.</p>
+            <p class="feature-desc mobile-desc">WOS's animated checkpoints feature is a fun and creative tool that allows users to customize the appearance of checkpoints.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="progress">
+            <a href="/wos/docs/features/progress">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Progress Bar</h1>
+            <p class="feature-desc desktop-desc">The progress bar is a simple feature that lets the user knows how close they are to completing an obby. If a user has completed 74 stages out of 100, the progress bar will be 74% to the end of the container.</p>
+            <p class="feature-desc mobile-desc">The progress bar is a simple feature that lets the user knows how close they are to completing an obby.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="indicator">
+            <a href="/wos/docs/features/stage-indicator">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Stage Indicator</h1>
+            <p class="feature-desc desktop-desc">The stage indicator is a small but common feature in obbies. It simple creates an arrow above the next checkpoint that a player can see through walls so that they know where to go.</p>
+            <p class="feature-desc mobile-desc">The stage indicator is a small but common feature in obbies. It simple creates an arrow above the next checkpoint that a player...</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="monetization">
+            <a href="/wos/docs/features/monetization">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Monetization</h1>
+            <p class="feature-desc desktop-desc">WOS provides easy and great monetization methods, click here for more information.</p>
+            <p class="feature-desc mobile-desc">WOS provides easy and great monetization methods, click here for more information.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="badges">
+            <a href="/wos/docs/features/badges">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Badges</h1>
+            <p class="feature-desc desktop-desc">Badges were always so annoying, giving badges to someone if they just touched a checkpoint. Even if they weren't alive, or were exploiting. Those days are far gone. Now, all you have to do is type the stage number, and then the BadgeID. It's really that simple, it takes longer to make the badge.</p>
+            <p class="feature-desc mobile-desc">Badges were always so annoying, giving badges to someone if they just touched a checkpoint. Those days are far gone.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="shiftlock">
+            <a href="/wos/docs/features/shiftlock">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Draggable Mobile Shiftlock</h1>
+            <p class="feature-desc desktop-desc">Mobile shiftlock was a blessing for all mobile players. Now, it's gotten even better. Mobile players have the luxury of dragging their shiftlock to any position they want.</p>
+            <p class="feature-desc mobile-desc">Mobile shiftlock was a blessing for all mobile players. Now, it's gotten even better...</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="chat-tags">
+            <a href="/wos/docs/features/chat-tags">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Chat Tags</h1>
+            <p class="feature-desc desktop-desc">You had to sift through broken models, bad colors, and find someone's UserID every time you just wanted a simple chat tag. Soon, that won't be necessary at all. Since WOS 0.8.3, you are be able to easily assign chat tags and colors via someone's UserID or their username.</p>
+            <p class="feature-desc mobile-desc">Chat Tags are here, you can view more information on your desktop.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="system">
+            <a href="/wos/docs/features/system-messages">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>System Messages</h1>
+            <p class="feature-desc desktop-desc">Add some extra messages to the chat, promote whatever you want.</p>
+            <p class="feature-desc mobile-desc">Add some extra messages to the chat, promote whatever you want.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="join-and-leave">
+            <a href="/wos/docs/features/system-messages">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Join and Leave</h1>
+            <p class="feature-desc desktop-desc">Let your players know when new people join the server, and when others leave. You can even set up exactly what it says.</p>
+            <p class="feature-desc mobile-desc">Let your players know when new people join the server, and when others leave.</p>
+            <br>
+            </a>
+        </div>
+        <br>
+        <div class="feature-display" id="settings">
+            <a href="/wos/docs/features/settings">
+            <img src="https://cdn.wolfite.net/icons/check/512x512.png"> <h1>Settings</h1>
+            <p class="feature-desc desktop-desc">Players can toggle shadows, blur, and hide the WOS UI. More settings are available for WOS Premium.</p>
+            <p class="feature-desc mobile-desc">Let your players know when new people join the server, and when others leave.</p>
+            <br>
+            </a>
+        </div>
+        
+        <br>
+</div>
+
+<div class="text-display" id="support">
+    <h1>Support & Socials</h1>
+    <hr>
+    <a href="/wos/faq"><b>FAQ</b></a>
+    <br>
+    <br>
+    <a href="https://wolfite.net/r/discord">
+        <img src="https://cdn.wolfite.net/icons/discord/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    &nbsp;
+    <a href="https://wolfite.net/r/twitter">
+        <img src="https://cdn.wolfite.net/icons/twitter/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    &nbsp;
+    <a href="https://wolfite.net/r/github">
+        <img src="https://cdn.wolfite.net/icons/github/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    &nbsp;
+    <a href="https://wolfite.net/r/youtube">
+        <img src="https://cdn.wolfite.net/icons/youtube/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    &nbsp;
+    <a href="https://wolfite.net/r/patreon">
+        <img src="https://cdn.wolfite.net/icons/patreon/512x512.png" style="width: 32px; height: 32px;">
+    </a>
+    <br>
+    <br>
+</div>
+<p style="text-align: center; width: 100%;">Get more features with <a href="/premium" target="_blank"><b>WOS Premium</b></a>.</p>
+<br>
+<br>
+</body>
 </html>
