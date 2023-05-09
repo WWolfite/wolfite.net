@@ -1,0 +1,205 @@
+body {
+    background-image: url(https://cdn.wolfite.net/display/wos/WOS_BG.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden scroll;
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+    justify-content: center;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+  }
+
+  /* --------------------------------------------------------------------- */
+
+.logo img {
+    width: 80%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+}
+
+a {
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+}
+
+hr {
+    background-color: rgb(90, 90, 90);
+    height: 2px;
+    border: none;
+    width: 80%;
+    border-radius: 1em;
+}
+
+.text-display, .feature-display {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 1.2em;
+    text-align: center;
+}
+
+.text-display h1, h2, h3, h4, h5, h6, p {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* .doc-display h1, h2, h3, h4, h5, h6, p {
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+} */
+
+.text-display div {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.feature-display h1, h2, h3, h4, h5, h6, p {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.feature-display {
+    background-color: rgba(0, 0, 0);
+    border-radius: 0.9em;
+    text-align: left;
+}
+
+.feature-display p {
+    color: rgb(220, 220, 220);
+}
+
+.feature-display img {
+    padding-left: 1%;
+    display: inline-block;
+    color: #FFF;
+    height: 26px;
+}
+
+.feature-display h1 {
+    display: inline-block;
+}
+
+.desktop-desc {
+    display: block;
+}
+
+.mobile-desc {
+    display: none;
+}
+
+#stats  {
+    height: 130px;
+}
+
+#stats .stat {
+    width: 10% !important;
+    /* height: 75%; */
+    float: left;
+    list-style-type: none;
+}
+
+#stats .stat img {
+    width: 40%;
+    height: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#stats .stat h2 {
+    width: 100%;
+    height: 20%;
+    margin: 0;
+}
+
+#stats .stat p {
+    width: 100%;
+    height: 10%;
+    color: rgb(220, 220, 220);
+    margin: 0;
+}
+
+button {
+    border-radius: 1em;
+    border: none;
+    padding: 5px;
+    background-color: rgba(60, 60, 72, 0.4);
+    color: #FFF;
+    /* width: 10%; */
+}
+
+button:hover {
+    background-color: rgba(98, 98, 121, 0.4);
+    color: #FFF;
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: rgba(60,60,74,0.7);
+}
+
+::selection {
+    background: rgba(60,60,74,0.7);
+}
+
+/* note: if screen under 750 in X width, disabe icons enxt to features. */
+
+/* "RESPONSIVENESS" */
+
+@media screen and (max-width: 750px) {
+    .feature-display img {
+        display: none;
+    }
+
+    #stats {
+        display: none;
+    }
+
+    .feature-display h1, h2, h3, h4, h5, h6, p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    /* #stats {
+        justify-items: center;
+    } */
+
+    #stats .stat {
+        width: 20% !important;
+        margin: 0 auto;
+    }
+
+    #stats #stat-1 {display: block;}
+    #stats #stat-2 {display: block;}
+    #stats #stat-3 {display: block;}
+    #stats #stat-4 {display: none;}
+    #stats #stat-5 {display: block;}
+}
+
+/* screen too small for website: 280px wide */
