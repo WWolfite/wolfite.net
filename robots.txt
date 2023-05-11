@@ -3,6 +3,7 @@ Disallow: /api/*/hidden
 
 Allow: /
 Allow: /wos
+Sitemap: https://wolfite.net/sitemap.xml
 
 # Details...
 Disallow: /api/fe2/map
