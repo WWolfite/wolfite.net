@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /api/*/hidden
+Disallow: /r
+Disallow: /r/*
 
 Allow: /
 Allow: /wos
