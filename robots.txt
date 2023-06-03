@@ -8,4 +8,5 @@ Allow: /wos
 Sitemap: https://wolfite.net/sitemap.xml
 
 # Details...
+Disallow: /wos/features/*
 Disallow: /api/fe2/map
