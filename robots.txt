@@ -3,8 +3,8 @@ Disallow: /api/*/hidden
 Disallow: /r
 Disallow: /r/*
 
-Allow: /
-Allow: /wos
+DisAllow: /
+DisAllow: /wos
 Sitemap: https://wolfite.net/sitemap.xml
 
 # Details...
